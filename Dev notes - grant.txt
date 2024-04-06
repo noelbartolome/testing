@@ -1,0 +1,3 @@
+Provided slick javascript and css are not working on the initial index.html file.
+Files are not found thus I have used CDN files from CDNJS but the slick slider is not working.
+Even if I use code from https://kenwheeler.github.io/slick/ the slider is not working. 
