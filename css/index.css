@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&family=Lexend:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
   --primary-color: #f3f4ec;
   --secondary-color: #6c6e71;
@@ -12,4 +15,133 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: "Lexend Peta", sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 500px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  max-width: 1330px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  .container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+}
+.container .box-1 {
+  display: flex;
+  background-color: #d4491b;
+  flex: 0 0 50%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 50px;
+}
+@media screen and (max-width: 991px) {
+  .container .box-1 {
+    flex: 0 0 100%;
+  }
+}
+.container .box-1 .box-1-child {
+  text-align: center;
+}
+.container .box-1 .box-1-child h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 66px;
+  font-weight: 900;
+  color: #7D46B7;
+}
+@media screen and (max-width: 991px) {
+  .container .box-1 .box-1-child h2 {
+    font-size: 40px;
+  }
+}
+.container .box-1 .box-1-child p {
+  font-family: "Red Hat Display", sans-serif;
+  color: #f3f4ec;
+  font-size: 19px;
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .container .box-1 .box-1-child p {
+    font-size: 20px;
+  }
+}
+.container .box-1 .button-wrapper {
+  text-align: center;
+}
+.container .box-1 .button-wrapper a {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #7D46B7;
+  padding: 8px 15px;
+  color: white;
+}
+.container .box-1 .button-wrapper a:hover {
+  background-color: #CB9CE1;
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .container .box-1 .button-wrapper {
+    text-align: right;
+  }
+}
+.container .box-1.box-image {
+  background-image: url(../assets/images/egypt.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .box-1.box-image-spain {
+  background-image: url(../assets/images/spain.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .container .box-1:first-child .box-1-child {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container .box-1:first-child .box-1-child {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container .box-1:first-child .button-wrapper {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container .box-1:first-child .button-wrapper {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container .box-1:last-child .box-1-child {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container .box-1:last-child .box-1-child {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container .box-1:last-child .button-wrapper {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container .box-1:last-child .button-wrapper {
+    text-align: right;
+  }
 }/*# sourceMappingURL=index.css.map */
