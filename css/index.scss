@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&family=Lexend:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100..900&family=Lexend:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 :root {
     // colors
     --primary-color: #f3f4ec;
@@ -22,7 +23,142 @@
     margin:0;
 }
 body {
-    font-family: "Lexend Peta", sans-serif;
+    font-family: "Inter", sans-serif;
+}
+
+.login-container {
+    display: flex;
+    position: relative;
+    z-index: auto;
+    min-height: 923px; // 900 in design
+    // width: 1312px;
+    .login-image {
+        display: flex;
+        position: absolute;
+        flex: 0 0 100%;
+        background-image: url(../assets/images/shoc.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    .login-content {
+        display: flex;
+        position: relative;
+        width: 100%;
+        &.login-content-left {
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+        }
+        &.page-width {
+            padding: 0px 64px;
+        }
+        .login-content__fixer {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            .login__section-title {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                gap: 55px;
+                .login__header {
+                    text-transform: uppercase;
+                    color: #E2C888;
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+                .login__sub-header {
+                    color: #FFFFFF;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24.3px;
+                }
+            }
+            .login__form-content {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 24px;
+                .login__form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    .login__form-header {
+                        color: #FFFFFF;
+                    }
+                    .login__form-input {
+                        height: 48px;
+                        width: 384px;
+                    }
+                }
+                .login__container {
+                    .login__buttons {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                        text-align: center;
+                        .login__buttons-login {
+                            height: 48px;
+                            width: 384px;
+                            padding: 12px 24px;
+                            color: #FFFFFF;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            background-color: #0B73CB;
+                            border-style: solid;
+                            border-color: #0B73CB;
+                        }
+                        .login__buttons-google {
+                            height: 48px;
+                            width: 384px;
+                            padding: 12px 24px;
+                            color: #FFFFFF;
+                            text-decoration: none;
+                            border-style: solid;
+                            border-color: #F4F4F4;
+                        }
+                    }
+                    .login__content {
+                        color: #FFFFFF;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        gap: 10px;
+                        padding-top: 24px;
+                        .login__content-sign {
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+            
+.login-content__fixer::before {
+    content: '';
+    position: absolute;
+    top: 162px;
+    border-style: solid solid hidden solid;
+    border-color: #FFFFFF;
+    border-width: 2px;
+    height: 38px;
+    width: 480px;
+}
+
+.login-content__fixer::after {
+    content: '';
+    top: 675px;
+    border-style: hidden solid solid solid;
+    border-color: #FFFFFF;
+    border-width: 2px;
+    height: 38px;
+    width: 480px;
 }
 
 .banner-container {
