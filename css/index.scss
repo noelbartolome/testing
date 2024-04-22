@@ -43,142 +43,43 @@ $blue:#0b73cb;
 }
 // Utils end
 
-// Button Start
-.button-blue {
-    display: inline-block;
-    background-color: $blue;
-    color: $white;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
-    text-transform: uppercase;
-    padding: 12px 24px;
-    text-decoration: none;
-}
-// Button End
-
-// Newsletter section styles start
-section.newsletter {
-    background-color: $gold;
-    padding: 65px;
-    .newsletter-wrapper {
+// Util Section Style Start
+section.util {
+    position: relative;
+    height: 100vh;
+    .util-wrapper {
         display: flex;
-        position: relative;
-        z-index: auto;
-        justify-content: space-between;
-        align-items: stretch;
-        column-gap: 30px;
-        padding: 65px 40px;
-        &::before, &::after {
-            content: '';
-            border-color: $off-black;
-            border-style: solid solid hidden hidden;
-            border-width: 3px;
-            width: 50px;
-            height: 50px;
+        flex-direction: column;
+        height: inherit;
+        justify-content: center;
+        align-items: center;
+        .util-bg {
+            background-image: url(../assets/images/404.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             position: absolute;
-            top: 0;  
-            right: 0;
+            inset: 0;
         }
-        &::after {
-            border-style: solid hidden hidden solid;
-            left: 0;  
-            right: unset;
-        }
-        .newsletter__header {
-            width: 50%;
-            h2 {
-                color: $off-black;
+        .util-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            .util-header {
                 text-transform: uppercase;
-                font-size: 45px;
-            }
-        }
-        .newsletter__content {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-            width: 50%;
-            .newsletter__content-sub {
-                font-size: 18px;
-            }
-            .newsletter__form {
-                display: flex;
-                gap: 16px;
-                .newsletter__form-email {
-                    width: 459px;
-                    height: 48px;
-                    padding: 12px;
-                }
-            }
-            .newsletter__terms{
-                font-size: 12px;
-            }
-        }
-        .newsletter_bottom-vector {
-            border-color: $off-black;
-            border-style: hidden solid solid solid;
-            border-width: 3px;
-            height: 40px;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            left: 0;
-        }
-    }
-}
-// Newsletter section styles end
-
-// Purpose Section Styles Start
-section.purpose {
-    background-color: $dark-gray;
-    padding: 178px 70px;
-    color: $light-gray;
-    .purpose__wrapper {
-        display: flex;
-        align-items: stretch;
-        column-gap: 90px;
-        .purpose__left {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-            row-gap: 40px;
-            .purpose__our-header {
-                color: $gold;
                 font-size: 45px;
                 line-height: 100%;
-                text-transform: uppercase;
+                color: $gold;
             }
-        }
-        .purpose__right {
-            display: flex;
-            flex-direction: column;
-            row-gap: 45px;
-            .purpose__item {
-                display: flex;
-                column-gap: 60px;
-                align-items: stretch;
-                .purpose__item-image {
-                    img {
-                        width: 112px;
-                        display: block;
-                        object-fit: contain;
-                    }
-                }
-                .purpose__item-content {
-                    flex-grow: 1;
-                    p {
-                        line-height: 1.5;
-                        &.purpose__item-heading {
-                            font-size: 24px;
-                            font-weight: 700;
-                            margin-bottom: 5px;
-                        }
-                    }
-                }
+            .util-subheader {
+                font-size: 18px;
+                line-height: 135%;
+                color: $white;
             }
         }
     }
 }
-// Purpose Section Styles End
+// Util Section Style End

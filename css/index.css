@@ -29,138 +29,41 @@ body {
   width: 100%;
 }
 
-.button-blue {
-  display: inline-block;
-  background-color: #0b73cb;
-  color: #fff;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 24px */
-  text-transform: uppercase;
-  padding: 12px 24px;
-  text-decoration: none;
-}
-
-section.newsletter {
-  background-color: #e2c888;
-  padding: 65px;
-}
-section.newsletter .newsletter-wrapper {
-  display: flex;
+section.util {
   position: relative;
-  z-index: auto;
-  justify-content: space-between;
-  align-items: stretch;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  padding: 65px 40px;
+  height: 100vh;
 }
-section.newsletter .newsletter-wrapper::before, section.newsletter .newsletter-wrapper::after {
-  content: "";
-  border-color: #101010;
-  border-style: solid solid hidden hidden;
-  border-width: 3px;
-  width: 50px;
-  height: 50px;
+section.util .util-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+section.util .util-wrapper .util-bg {
+  background-image: url(../assets/images/404.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
-  top: 0;
-  right: 0;
+  inset: 0;
 }
-section.newsletter .newsletter-wrapper::after {
-  border-style: solid hidden hidden solid;
-  left: 0;
-  right: unset;
+section.util .util-wrapper .util-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-section.newsletter .newsletter-wrapper .newsletter__header {
-  width: 50%;
-}
-section.newsletter .newsletter-wrapper .newsletter__header h2 {
-  color: #101010;
+section.util .util-wrapper .util-content .util-header {
   text-transform: uppercase;
-  font-size: 45px;
-}
-section.newsletter .newsletter-wrapper .newsletter__content {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 50%;
-}
-section.newsletter .newsletter-wrapper .newsletter__content .newsletter__content-sub {
-  font-size: 18px;
-}
-section.newsletter .newsletter-wrapper .newsletter__content .newsletter__form {
-  display: flex;
-  gap: 16px;
-}
-section.newsletter .newsletter-wrapper .newsletter__content .newsletter__form .newsletter__form-email {
-  width: 459px;
-  height: 48px;
-  padding: 12px;
-}
-section.newsletter .newsletter-wrapper .newsletter__content .newsletter__terms {
-  font-size: 12px;
-}
-section.newsletter .newsletter-wrapper .newsletter_bottom-vector {
-  border-color: #101010;
-  border-style: hidden solid solid solid;
-  border-width: 3px;
-  height: 40px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-section.purpose {
-  background-color: #272727;
-  padding: 178px 70px;
-  color: #f4f4f4;
-}
-section.purpose .purpose__wrapper {
-  display: flex;
-  align-items: stretch;
-  -moz-column-gap: 90px;
-       column-gap: 90px;
-}
-section.purpose .purpose__wrapper .purpose__left {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  row-gap: 40px;
-}
-section.purpose .purpose__wrapper .purpose__left .purpose__our-header {
-  color: #e2c888;
   font-size: 45px;
   line-height: 100%;
-  text-transform: uppercase;
+  color: #e2c888;
 }
-section.purpose .purpose__wrapper .purpose__right {
-  display: flex;
-  flex-direction: column;
-  row-gap: 45px;
-}
-section.purpose .purpose__wrapper .purpose__right .purpose__item {
-  display: flex;
-  -moz-column-gap: 60px;
-       column-gap: 60px;
-  align-items: stretch;
-}
-section.purpose .purpose__wrapper .purpose__right .purpose__item .purpose__item-image img {
-  width: 112px;
-  display: block;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-section.purpose .purpose__wrapper .purpose__right .purpose__item .purpose__item-content {
-  flex-grow: 1;
-}
-section.purpose .purpose__wrapper .purpose__right .purpose__item .purpose__item-content p {
-  line-height: 1.5;
-}
-section.purpose .purpose__wrapper .purpose__right .purpose__item .purpose__item-content p.purpose__item-heading {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 5px;
+section.util .util-wrapper .util-content .util-subheader {
+  font-size: 18px;
+  line-height: 135%;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
